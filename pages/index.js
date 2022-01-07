@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export default function Home({posts}) {
   return (
     <div className={styles.container}>
       <Head>
@@ -15,12 +15,32 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to NextWp app
         </h1>
-
+        {posts.map((post) => {
+          return (
+            <div className={styles.card} key={post.id}>
+              <h2>{post.title.rendered}</h2>
+            </div>
+          )
+        })}
       </main>
+
+
 
       <footer className={styles.footer}>
         
       </footer>
     </div>
   )
+}
+
+export async function getStaticProps(){
+  const response = await fetch('https://adminwp.pepenet.info/wp-json/wp/v2/posts')
+  //const response = await fetch('https://jsonplaceholder.typicode.com/users')
+  const data = await response.json()
+
+  return{
+    props:{
+      posts: data,
+    },
+  }
 }
