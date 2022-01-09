@@ -13,7 +13,7 @@ export default function Home({posts}) {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to NextWp app
+          Welcome to NextWp app2
         </h1>
         {posts.map((post) => {
           return (
