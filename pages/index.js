@@ -15,6 +15,7 @@ export default function Home({posts}) {
         <h1 className={styles.title}>
           Welcome to NextWp app2
         </h1>
+        <img src="https://d2j5yhogz3pnm1.cloudfront.net/wp-content/uploads/2022/01/11214427/Cattura.png" alt="prova"/>
         {posts.map((post) => {
           return (
             <div className={styles.card} key={post.id}>
