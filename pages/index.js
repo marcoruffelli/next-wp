@@ -13,7 +13,7 @@ export default function Home({posts}) {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Versione nuova 2 venerdi 14
+          Versione nuova 3 venerdi 14
         </h1>
         <img src="https://d2j5yhogz3pnm1.cloudfront.net/wp-content/uploads/2022/01/11214427/Cattura.png" alt="prova"/>
         <img src="https://imagesnextwp.s3.eu-central-1.amazonaws.com/wp-content/uploads/2022/01/11214427/Cattura.png" alt="prova"/>
