@@ -17,7 +17,7 @@ export default function Home({posts}) {
         </h1>
         <img src="https://d2j5yhogz3pnm1.cloudfront.net/wp-content/uploads/2022/01/11214427/Cattura.png" alt="prova"/>
         <img src="https://imagesnextwp.s3.eu-central-1.amazonaws.com/wp-content/uploads/2022/01/11214427/Cattura.png" alt="prova"/>
-        <img src="https://www.pepenet.info/Look-Screen-01.jpg" alt="prova"/>
+        <img src="https://www.pepenet.info/Lock-Screen-01.jpg" alt="prova"/>
         {posts.map((post) => {
           return (
             <div className={styles.card} key={post.id}>
