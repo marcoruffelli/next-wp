@@ -12,7 +12,7 @@ export default function Home({ posts }) {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>altra modifica 8/2/2022</h1>
+        <h1 className={styles.title}>modifica 9/2/2022</h1>
         <img src="https://pepenet.info/img/foto-1.webp" alt="prova" />
         <img src="https://pepenet.info/img/foto-2.webp" alt="prova" />
         <img src="https://pepenet.info/img/foto-3.webp" alt="prova" />
