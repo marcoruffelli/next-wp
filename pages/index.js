@@ -14,9 +14,14 @@ export default function Home({ posts }) {
 
       <main className={styles.main}>
         <h1 className={styles.title}>modifica 9/2/2022</h1>
+
         <Image
-          src="https://pepenet.info/img/foto-1.webp"
+          src="https://pepenet.info/img/foto-2.webp"
+          alt="Image"
+          width="350px"
+          heigh="300px"
         />
+
         <img src="https://pepenet.info/img/foto-2.webp" alt="prova" />
         <img src="https://pepenet.info/img/foto-3.webp" alt="prova" />
 
