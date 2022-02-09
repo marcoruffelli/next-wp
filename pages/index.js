@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from 'next/image'
 
 import styles from "../styles/Home.module.css";
 
@@ -13,9 +14,12 @@ export default function Home({ posts }) {
 
       <main className={styles.main}>
         <h1 className={styles.title}>modifica 9/2/2022</h1>
-        <img src="https://pepenet.info/img/foto-1.webp" alt="prova" />
+        <Image
+          src="https://pepenet.info/img/foto-1.webp"
+        />
         <img src="https://pepenet.info/img/foto-2.webp" alt="prova" />
         <img src="https://pepenet.info/img/foto-3.webp" alt="prova" />
+
         {posts.map((post) => {
           return (
             <div className={styles.card} key={post.id}>
