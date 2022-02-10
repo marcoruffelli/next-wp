@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Image from 'next/image'
+import profilePic from '../public/me.png'
+import profilePic1 from '../public/download.jpg'
 
 import styles from "../styles/Home.module.css";
 
@@ -15,13 +17,26 @@ export default function Home({ posts }) {
       <main className={styles.main}>
         <h1 className={styles.title}>modifica 9/2/2022</h1>
 
+        <h1>My photos component Image</h1>
         <Image
-          src="https://pepenet.info/img/foto-2.webp"
-          alt="Image"
-          width="350px"
-          heigh="300px"
+          src={profilePic}
+          alt="My picture"
+        // width={500} automatically provided
+        // height={500} automatically provided
+        // blurDataURL="data:..." automatically provided
+        // placeholder="blur" // Optional blur-up while loading
         />
-
+        <h1>Foto component Image da  dir locale publc</h1>
+        <Image
+          src={profilePic1}
+          alt="foto da locale dir public"
+        // width={500} automatically provided
+        // height={500} automatically provided
+        // blurDataURL="data:..." automatically provided
+        // placeholder="blur" // Optional blur-up while loading
+        />
+        <h2>Le 3 foto seguanti sono importate da buket S3 con distribuzione clidfront e dominio pepenet.info</h2>
+        <img src="https://pepenet.info/img/foto-1.webp" alt="prova" />
         <img src="https://pepenet.info/img/foto-2.webp" alt="prova" />
         <img src="https://pepenet.info/img/foto-3.webp" alt="prova" />
 
