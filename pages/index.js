@@ -36,20 +36,43 @@ export default function Home({ posts }) {
         // placeholder="blur" // Optional blur-up while loading
         />
 
-        <h1>Foto component Image da  remoto pepenet.info/img</h1>
-        <Image
-          src="https://pepenet.info/img/foto-4.webp"
-          alt="altra foto"
-          width={500}
-          height={500}
-          blurDataURL="data:..."
-          placeholder="blur"
-        />
+        <div>
+          <h1>Foto component Image da  remoto layout intrinsic/img</h1>
+          <Image
+            src="https://pepenet.info/img/foto01.jpg"
+            alt="altra foto"
+            width={7}
+            height={9}
+            layout='intrinsic'
+          />
+          <h1>Foto component Image da  remoto layout fixed</h1>
+          <Image
+            src="https://pepenet.info/img/foto02.jpg"
+            alt="altra foto"
+            width={800}
+            height={533}
+            layout='fixed'
+          />
+          <h1>Foto component Image da  remoto layout responsive</h1>
+          <Image
+            src="https://pepenet.info/img/foto03.jpg"
+            alt="altra foto"
+            width={8}
+            height={5}
+            layout='responsive'
+          />
 
-        <h2>Le 3 foto seguanti sono importate da buket S3 con distribuzione cloudfront e dominio pepenet.info</h2>
-        <img src="https://pepenet.info/img/foto-1.webp" alt="prova" />
-        <img src="https://pepenet.info/img/foto-2.webp" alt="prova" />
-        <img src="https://pepenet.info/img/foto-3.webp" alt="prova" />
+
+          <h1>Foto component Image da  remoto layout intrinsic</h1>
+          <Image
+            src="https://pepenet.info/img/foto05.jpg"
+            alt="altra foto"
+            width={500}
+            height={365}
+            layout='intrinsic'
+          />
+        </div>
+
 
         {posts.map((post) => {
           return (
