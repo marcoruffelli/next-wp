@@ -35,7 +35,18 @@ export default function Home({ posts }) {
         // blurDataURL="data:..." automatically provided
         // placeholder="blur" // Optional blur-up while loading
         />
-        <h2>Le 3 foto seguanti sono importate da buket S3 con distribuzione clidfront e dominio pepenet.info</h2>
+
+        <h1>Foto component Image da  remoto pepenet.info/img</h1>
+        <Image
+          src="https://pepenet.info/img/foto-4.webp"
+          alt="foto non trovata"
+          width={500}
+          height={500}
+        // blurDataURL="data:..." automatically provided
+        // placeholder="blur" // Optional blur-up while loading
+        />
+
+        <h2>Le 3 foto seguanti sono importate da buket S3 con distribuzione cloudfront e dominio pepenet.info</h2>
         <img src="https://pepenet.info/img/foto-1.webp" alt="prova" />
         <img src="https://pepenet.info/img/foto-2.webp" alt="prova" />
         <img src="https://pepenet.info/img/foto-3.webp" alt="prova" />
