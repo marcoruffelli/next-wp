@@ -42,8 +42,8 @@ export default function Home({ posts }) {
           alt="altra foto"
           width={500}
           height={500}
-        // blurDataURL="data:..." automatically provided
-        // placeholder="blur" // Optional blur-up while loading
+          blurDataURL="data:..."
+          placeholder="blur"
         />
 
         <h2>Le 3 foto seguanti sono importate da buket S3 con distribuzione cloudfront e dominio pepenet.info</h2>
