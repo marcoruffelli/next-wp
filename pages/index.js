@@ -39,7 +39,7 @@ export default function Home({ posts }) {
         <h1>Foto component Image da  remoto pepenet.info/img</h1>
         <Image
           src="https://pepenet.info/img/foto-4.webp"
-          alt="foto non trovata"
+          alt="altra foto"
           width={500}
           height={500}
         // blurDataURL="data:..." automatically provided
