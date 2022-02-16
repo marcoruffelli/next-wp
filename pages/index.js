@@ -36,23 +36,6 @@ export default function Home({ posts }) {
         // placeholder="blur" // Optional blur-up while loading
         />
 
-
-        <h1>Foto component Image da  remoto layout intrinsic/img</h1>
-        <Image
-          src="https://pepenet.info/img/foto01.jpg"
-          alt="altra foto"
-          width={700}
-          height={900}
-          layout='intrinsic'
-        />
-        <h1>Foto component Image da  remoto layout fixed</h1>
-        <Image
-          src="https://pepenet.info/img/foto02.jpg"
-          alt="altra foto"
-          width={800}
-          height={533}
-          layout='intrinsic'
-        />
         <h1>Foto component Image da  remoto layout responsive</h1>
         <Image
           src="https://pepenet.info/img/foto03.jpg"
@@ -61,25 +44,6 @@ export default function Home({ posts }) {
           height={533}
           layout='intrinsic'
         />
-        <h1>Foto component Image da  remoto layout responsive</h1>
-        <Image
-          src="https://pepenet.info/img/foto04.jpg"
-          alt="altra foto"
-          width={500}
-          height={322}
-          layout='intrinsic'
-        />
-
-        <h1>Foto component Image da  remoto layout intrinsic</h1>
-        <Image
-          src="https://pepenet.info/img/foto05.jpg"
-          alt="altra foto"
-          width={500}
-          height={365}
-          layout='intrinsic'
-        />
-
-
 
         {posts.map((post) => {
           return (
@@ -104,5 +68,6 @@ export async function getStaticProps() {
     props: {
       posts: data,
     },
+    revalidate: 100
   };
 }
