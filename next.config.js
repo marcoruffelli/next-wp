@@ -3,5 +3,4 @@ module.exports = {
   images: {
     domains: ['pepenet.info'],
   },
-  webpack5: false,
 }

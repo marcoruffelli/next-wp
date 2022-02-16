@@ -36,26 +36,57 @@ export default function Home({ posts }) {
         // placeholder="blur" // Optional blur-up while loading
         />
 
-        <h1>Foto component Image da  remoto layout responsive</h1>
-        <Image
-          src="https://pepenet.info/img/foto03.jpg"
-          alt="altra foto"
-          width={800}
-          height={533}
-          layout='intrinsic'
-        />
+        <div>
+          <h1>Foto component Image da  remoto layout intrinsic/img</h1>
+          <Image
+            src="https://pepenet.info/img/foto01.jpg"
+            alt="altra foto"
+            width={7}
+            height={9}
+            layout='intrinsic'
+          />
+          <h1>Foto component Image da  remoto layout fixed</h1>
+          <Image
+            src="https://pepenet.info/img/foto02.jpg"
+            alt="altra foto"
+            width={800}
+            height={533}
+            layout='fixed'
+          />
+          <h1>Foto component Image da  remoto layout responsive</h1>
+          <Image
+            src="https://pepenet.info/img/foto03.jpg"
+            alt="altra foto"
+            width={8}
+            height={5}
+            layout='responsive'
+          />
 
-        {posts.map((post) => {
-          return (
-            <div className={styles.card} key={post.id}>
-              <h2>{post.title.rendered}</h2>
-            </div>
-          );
-        })}
-      </main>
+
+          <h1>Foto component Image da  remoto layout intrinsic</h1>
+          <Image
+            src="https://pepenet.info/img/foto05.jpg"
+            alt="altra foto"
+            width={500}
+            height={365}
+            layout='intrinsic'
+          />
+        </div>
+
+
+        {
+          posts.map((post) => {
+            return (
+              <div className={styles.card} key={post.id}>
+                <h2>{post.title.rendered}</h2>
+              </div>
+            );
+          })
+        }
+      </main >
 
       <footer className={styles.footer}></footer>
-    </div>
+    </div >
   );
 }
 
@@ -68,6 +99,5 @@ export async function getStaticProps() {
     props: {
       posts: data,
     },
-    revalidate: 100
   };
 }
